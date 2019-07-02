@@ -1,27 +1,29 @@
 <html>
 <head>
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <script src="js/javascript.js"></script>
+        <script type="text/javascript" src=".js"></script>
 </head>
-<body style="background-color:#4d4d4d">
+    <body style="background-color:#4d4d4d">
 
-<form>
-      <label class="flabel">label</label><br>
-      <input name="label-text" id="label"><br>
-      <label class="slabel">Select color</label><br>
-      <input type="color" name="favcolor" value="#ff0000">
-     <!--  <input type="submit"> -->
-      <button type="button"id="save" onclick="Save()">Save</button>
+        <form>
+              <label class="flabel">label</label><br>
+              <input name="label5" id="label"onclick="showInput();"> <br>
+              <p><span id='display'></span></p>
+              <label class="slabel">Select color</label><br>
+              <input class="color"type="color" name="favcolor" value="#ff0000">
+              <button type="button"id="save" onclick="Save()">Submit</button>
+        </form>
 
         <script type="text/javascript">
+                     function Save() {
+                     location.href='index.html';
+                 };
 
-         function Save() {
-             location.href='index.html';
-         };
-
-
-         </script>
-
-</form>
-</body>
+                  function showInput(){
+                  document.getElementById('display').innerHTML =
+                  document.getElementById("save").value;
+                  // document.getElementById("save").value;
+                  };
+        </script>
+    </body>
 </html>

@@ -9,13 +9,15 @@
     border-left:1px solid #ded6d6;
     margin-right: 0px;
     padding-left: 5px;
+    cursor: pointer;
 }
 
 #plusi{
     border-right: 1px solid #ded6d6;
     margin-left: 0px;
     padding-right: 5px;
-    }
+    cursor: pointer;
+  }
 
 .addremove{
     width: 20%;
@@ -29,19 +31,22 @@
 #add{
 
     margin-left: 0px;
-    padding-left:0px;
     padding-top:200px;
     margin-right:10px;
+    padding-right:20px;
     cursor: pointer;
 
     }
 
 #save{
   cursor: pointer;
+  padding: 10px 24px;
+  border-radius:4px;
+ margin-left: 1111px;
 }
-
-.counter{
-    padding-right:50px;
+.button{
+    padding-left:50px;
+    margin-left: 40%;
 }
 
 
@@ -54,12 +59,16 @@
 }
 
 .slabel{
-      color: white;
+  color: white;
+  padding-bottom: : 20px;
+  line-height: 35px;
+
 
 }
 
 
 .flabel{
-      color: white;
+  color: white;
 
 }
+

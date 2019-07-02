@@ -1,50 +1,51 @@
 <!DOCTYPE html>
 <html>
-<head>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="javascript.js"></script>
-</head>
-<body>
-    <div class="col-md-12">
+    <head>
+            <link rel="stylesheet" type="text/css" href="css/style.css">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <script type="text/javascript" src="hello.js"></script>
+    </head>
 
+    <body>
+        <div class="col-md-12">
+            <div class="addremove">
+                    <i class="fa fa-minus-circle" id="plusi" onclick="FunMinus()"></i>
+                    <!-- <p>test</p> -->
+                    <span class="counter"id="total"></span>
+                    <i class="fa fa-plus-circle" id="plusj" onclick="FunPlus()"></i>
 
-         <div class="addremove">
-                <i class="fa fa-minus-circle" id="plusi" onclick="FunMinus()"></i>
-                <span class="counter" id="total"></span>
-                <i class="fa fa-plus-circle" id="plusj" onclick="FunPlus()"></i>
-
-        </div>
-</div>
-
-<div class="col-md-12">
-            <div class="add">
-               <span class="counter" id="totalbutton"></span>
-              <i class="fa fa-plus-circle fa-2x" id="add" onclick="AddButton()"></i>
             </div>
-</div>
-<script type="text/javascript">
+        </div>
 
-function AddButton(target) {
-    location.href='form.html';
-};
+      <div class="col-md-12">
+                <div class="add">
+                   <span class="button" id="totalbutton"></span>
+                  <i class="fa fa-plus-circle fa-2x" id="add" onclick="AddButton()"></i>
+                </div>
+     </div>
 
-count = 0;
-function FunPlus() {
+        <script type="text/javascript">
 
-        count += 1;
-        // alert(count);
-        document.getElementById("total").innerHTML = count;
+                function AddButton(target) {
+                    location.href='form.html';
+                };
 
-};
+                count = 0;
+                function FunPlus() {
 
-function FunMinus() {
-  count -= 1;
-  // alert(count);
-   document.getElementById("total").innerHTML = count;
-}
-</script>
+                        count += 1;
+                        // alert(count);
+                        document.getElementById("total").innerHTML = count;
+
+                };
+
+                function FunMinus() {
+                  count -= 1;
+                  // alert(count);
+                   document.getElementById("total").innerHTML = count;
+                }
+        </script>
 
 
-</body>
+    </body>
 </html>
