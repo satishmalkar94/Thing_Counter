@@ -1,0 +1,65 @@
+
+.counter{
+    text-align: center;
+    margin-left: 40%;
+}
+
+#plusj{
+    float: right;
+    border-left:1px solid #ded6d6;
+    margin-right: 0px;
+    padding-left: 5px;
+}
+
+#plusi{
+    border-right: 1px solid #ded6d6;
+    margin-left: 0px;
+    padding-right: 5px;
+    }
+
+.addremove{
+    width: 20%;
+    background-color:#e60000;
+    color: #ffffff;
+    padding: 10px;
+    border-radius:15px;
+}
+
+
+#add{
+
+    margin-left: 0px;
+    padding-left:0px;
+    padding-top:200px;
+    margin-right:10px;
+    cursor: pointer;
+
+    }
+
+#save{
+  cursor: pointer;
+}
+
+.counter{
+    padding-right:50px;
+}
+
+
+.btn {
+  border: none;
+  background-color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.slabel{
+      color: white;
+
+}
+
+
+.flabel{
+      color: white;
+
+}
