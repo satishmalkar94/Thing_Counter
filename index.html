@@ -13,7 +13,7 @@
               <input name="label5" id="textvalue"> <br>
               <p><span id='display'></span></p>
               <label class="slabel">Select color</label><br>
-              <input class="color"type="color" id="cvalue" name="favcolor" value="#ff0000">
+              <input class="color"type="color" id="cvalue" name="favcolor" value="#ff0000" onchange="setColor('addremove',this)">
               <button type="button"id="save" onclick="Save()">Save</button>
         </form>
 </div>
@@ -39,10 +39,10 @@
 
 <script type="text/javascript">
 
-// function setColor(elementId,cvalue){
-//     alert(document.getElementsByClassName(elementId));
-//     document.getElementsByClassName(elementId).style.backgroundColor=cvalue.value;
-// }
+function setColor(elementId,cvalue){
+    alert(document.getElementsByClassName(elementId));
+    document.getElementsByClassName(elementId).style.backgroundColor=cvalue.value;
+}
 
 </script>
 
