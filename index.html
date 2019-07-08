@@ -10,23 +10,20 @@
 <div class="main">
     <form>
               <label class="flabel">label</label><br>
-              <input name="label5" id="textvalue"> <br>
+              <input name="label" id="textvalue"> <br>
               <p><span id='display'></span></p>
               <label class="slabel">Select color</label><br>
-              <input class="color"type="color" id="cvalue" name="favcolor" value="#ff0000" onchange="setColor('addremove',this)">
+              <input class="color"type="color" id="cvalue" name="favcolor" value="#ff0000">
               <button type="button"id="save" onclick="Save()">Save</button>
-        </form>
+    </form>
 </div>
 
         <div class="col-md-12">
             <div class="addremove" id="addremove">
                     <i class="fa fa-minus-circle" id="plusi" onclick="FunMinus()"></i>
-                    <!-- <p>test</p> -->
-
-                    <span class="counter1"id="texttotal"></span>
                     <span class="counter"id="total"></span>
+                    <span class="counter" id="total1"></span>
                     <i class="fa fa-plus-circle" id="plusj" onclick="FunPlus()"></i>
-
             </div>
         </div>
 
@@ -36,15 +33,6 @@
                   <i class="fa fa-plus-circle fa-2x" id="add" onclick="AddButton()"></i>
                 </div>
      </div>
-
-<script type="text/javascript">
-
-function setColor(elementId,cvalue){
-    alert(document.getElementsByClassName(elementId));
-    document.getElementsByClassName(elementId).style.backgroundColor=cvalue.value;
-}
-
-</script>
 
     </body>
 </html>
