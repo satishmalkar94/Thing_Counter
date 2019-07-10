@@ -1,78 +1,49 @@
-
-.counter{
-    text-align: center;
-    margin-left: 40%;
+body{
+  background-color: darkgray;
+}
+.plusj{
+  float: right;
+  margin-right: 0px;
+  padding-left: 5px;
+  cursor: pointer;
 }
 
-#plusj{
-    float: right;
-    border-left:1px solid #ded6d6;
-    margin-right: 0px;
-    padding-left: 5px;
-    cursor: pointer;
+.plusi{
+  margin-left: 0px;
+  padding-right: 5px;
+  cursor: pointer;
 }
-
-#plusi{
-    border-right: 1px solid #ded6d6;
-    margin-left: 0px;
-    padding-right: 5px;
-    cursor: pointer;
-  }
 
 .addremove{
-    width: 20%;
-    background-color:#e60000;
-    color: #ffffff;
-    padding: 10px;
-    border-radius:15px;
+  width: 20%;
+  color:#ffffff;
+  padding: 10px;
+  border-radius:15px;
+  height: 21px;
+  cursor: pointer;
 }
 
+.add{
 
-#add{
+  padding-top:50px;
+  margin-left:220px;
+  padding-right:520px;
+  cursor: pointer;
 
-    margin-left: 0px;
-    padding-top:200px;
-    margin-right:10px;
-    padding-right:20px;
-    cursor: pointer;
+}
 
-    }
-
-#save{
+.save{
   cursor: pointer;
   padding: 10px 24px;
   border-radius:4px;
- margin-left: 1111px;
-}
-.button{
-    padding-left:50px;
-    margin-left: 40%;
-}
-
-
-.btn {
-  border: none;
-  background-color: white;
-  padding: 14px 28px;
-  font-size: 16px;
-  cursor: pointer;
+  margin-left: 150px;
 }
 
 .slabel{
   color: #000000;
-  padding-bottom: : 20px;
+  padding-bottom: 20px;
   line-height: 35px;
-
-
-}
-
-
-.flabel{
-  color: #000000;
+  cursor: pointer;
 
 }
 
-/*#texttotal{
-  padding-left:20px;
-    margin-left: 20%;
-}*/

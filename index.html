@@ -1,38 +1,29 @@
 <!DOCTYPE html>
 <html>
-    <head>
-            <link rel="stylesheet" type="text/css" href="css/style.css">
-            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-            <script type="text/javascript" src="js/hello.js"></script>
+      <head>
+          <link rel="stylesheet" type="text/css" href="css/style.css">
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+          <script type="text/javascript" src="js/hello.js"></script>
     </head>
 
-    <body>
-<div class="main">
-    <form>
+  <body>
+    <div class="main">
+           <form>
               <label class="flabel">label</label><br>
+              Please add you label in below text box<br>
               <input name="label" id="textvalue"> <br>
               <p><span id='display'></span></p>
               <label class="slabel">Select color</label><br>
               <input class="color"type="color" id="cvalue" name="favcolor" value="#ff0000">
-              <button type="button"id="save" onclick="Save()">Save</button>
-    </form>
-</div>
+              <button class="save "type="button"id="save" onclick="AddButton()">Save</button>
+          </form>
+    </div>
 
-        <div class="col-md-12">
-            <div class="addremove" id="addremove">
-                    <i class="fa fa-minus-circle" id="plusi" onclick="FunMinus()"></i>
-                    <span class="counter"id="total"></span>
-                    <span class="counter" id="total1"></span>
-                    <i class="fa fa-plus-circle" id="plusj" onclick="FunPlus()"></i>
+          <div class="col-md-12">
+            <div class="add">
+            <i class="fa fa-plus-circle fa-2x" id="add" onclick="AddButton()"></i>
             </div>
-        </div>
-
-      <div class="col-md-12">
-                <div class="add">
-                   <span class="button" id="totalbutton"></span>
-                  <i class="fa fa-plus-circle fa-2x" id="add" onclick="AddButton()"></i>
-                </div>
-     </div>
-
-    </body>
+          <div id="totalbutton"></div>
+         </div>
+  </body>
 </html>

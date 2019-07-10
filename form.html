@@ -1,4 +1,4 @@
-<html>
+<!-- <html>
 <head>
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <script type="text/javascript" src="js/hello.js"></script>
@@ -6,7 +6,158 @@
     <body style="background-color:#4d4d4d">
 
 
+<body>
+
+<p>Click the "Try it" button to create a BUTTON element with a "Click me" text.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  var x = document.createElement("BUTTON");
+  var t = document.createTextNode("Click me");
+  x.appendChild(t);
+  document.body.appendChild(x);
+}
+</script>
+
+</body>
+</html>
+ -->
+
+<!-- <html>
+    <head>
+        <title>
+        Dinamically add textbox, radio button
+        </title>
+        <script language="Javascript">
+        function add(type) {
+
+    //Create an input type dynamically.
+    var element = document.createElement("input");
+
+    //Assign different attributes to the element.
+    element.setAttribute("type", type);
+    element.setAttribute("value", type);
+    element.setAttribute("name", type);
 
 
+    var foo = document.getElementById("fooBar");
+
+    //Append the element in page (in span).
+    foo.appendChild(element);
+
+}
+        </script>
+    </head>
+    <body>
+    <form>
+        <h2>Dinamically add textbox, and radio button in form</h2>
+        <br/>
+        <h3>Please select any type</h3>
+        <select name="element">
+            <option value="button">Button</option>
+            <option value="text">TextBox</option>
+            <option value="radio">Radio</option>
+        </select>
+            <input type='button' onclick='alert(arrayToModify);' value='Show the buttons I have clicked' />
+
+        <span id="fooBar">&nbsp;</span>
+    </form>
     </body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<script>
+function setColor(btn, color){
+    var count=1;
+    var property = document.getElementById(btn);
+    if (count == 0){
+        property.style.backgroundColor = "#FFFFFF"
+        count=1;
+    }
+    else{
+        property.style.backgroundColor = "#7FFF00"
+        count=0;
+    }
+
+}
+</script>
+</head>
+
+<body>
+
+<input type="button" id="button" value = "button" style= "color:white" onclick="setColor('button', '#101010')";/>
+
+</body>
+</html> -->
+
+
+
+<!-- <html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+     <script language="JavaScript">
+
+        function changeColor(){
+             document.getElementsByTagName('button').style.backgroundColor="green";
+        }
+
+     </script>
+
+    </head>
+
+    <body >
+
+        <form action="/action_page.php" method="get" name="form1">
+            <input type="text" id="campoDeFlores">
+            <button type="button" onclick="changeColor()" name="1">1</button>
+            <button type="button"  name="2">2</button>
+            <button type="button"  name="3">3</button>
+        </form>
+    </body>
+</html> -->
+
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script type="text/javascript" src="js/hello.js"></script>
+</head>
+<body>
+    <form action="/action_page.php" method="get" name="form1">
+  <input type="text" id="campoDeFlores">
+  <button type="button" onclick="changeColor(this)" name="1">1</button>
+  <button type="button" name="2">2</button>
+  <button type="button" name="3">3</button>
+</form>
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>js test example</title>
+    <script>
+        function Testing(){
+
+
+document.getElementById('testbtn').value ='ok tested';
+document.getElementById('testbtn').style.color ='red';
+return false;
+}
+    </script>
+</head>
+<body>
+    <input type="button" value="Test" id="testBtn" onclick="Testing">
+
+</body>
 </html>
